@@ -17,5 +17,5 @@ git clone https://github.com/mrvanonmus/Aminosploit
 ```
 # تشغيل
 ```
-cd Aminosploit && bash aminosploit.sh
+cd Aminosploit && bash Aminosploit.sh
 ```
