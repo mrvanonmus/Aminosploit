@@ -24,30 +24,34 @@ while tst==False:
 		if exx=='N' or exx=='n' or exx=='no':
 				os._exit(1)
 
-tId=client.get_wallet_history(start=0,size=1).transanctionId
-
 os.system("clear")
+
 print (" _____   _____       ___ \n/  ___/ | ____|     /   | \n| |___  | |__      / /| | \n\___  \ |  __|    / /_| | \n ___| | | |___   / /__| |\n/_____/ |_____| /_/   |_|")
 
-blgd=input("\n\n\033[1;33m# Give Me The blog url : \033[1;0m")
-blgd=client.get_from_code(blogld)
+prfile=input("\033[1;93m\n\n# ur profile url : \033[1;0m")
 
-comId=cht.path[1:cht.path.index("/")]
+prfile=client.get_from_code(prfile)
+
+comId=prfile.path[1:prfile.path.index("/")]
+
 subclient=amino.SubClient(comId=comId,profile=client.profile)
 
-cht=cht.objectId
-
-print("\n\n\033[1;33mThe TransactionId : \033[1;0m"+tId.pop())
+prfile=prfile.objectId
 
 os.system("clear")
+
 print (" _____   _____       ___ \n/  ___/ | ____|     /   | \n| |___  | |__      / /| | \n\___  \ |  __|    / /_| | \n ___| | | |___   / /__| |\n/_____/ |_____| /_/   |_|")
 
-tran=input("\n\n\033[1;33m# Give Me The TransactionId :\033[1;0m ")
+prfile2=input("\n\n\033[1;93m# url of the person : \033[1;0m")
 
-while True:
-	coins=input("\n\n\033[1;33m# How Much Coins ? :\033[1;0m ")
-	subclient.send_coins(blogId=blgd,coins="1",transactionId=tran)
-	subclient.send_coins(coins=coins,blogId=blgd,transactionId=tran)
-	subclient.send_coins(coins=coins,blogId=blgd,transactionId=tran)
-	subclient.send_coins(coins=coins,blogId=blgd,transactionId=tran)
-	print("\n\033[1;36mDone...")
+prfile2=client.get_from_code(prfile2)
+
+prfile2=prfile2.objectId
+
+os.system("clear")
+
+print (" _____   _____       ___ \n/  ___/ | ____|     /   | \n| |___  | |__      / /| | \n\___  \ |  __|    / /_| | \n ___| | | |___   / /__| |\n/_____/ |_____| /_/   |_|")
+
+msg=input("\n\n\033[1;93m# message : \033[1;0m")
+
+subclient.start_chat(userId=[prfile,prfile2],message=msg)
