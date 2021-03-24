@@ -4,7 +4,7 @@ SEA
 # متطلبات
 ```
 pkg install python 
-pkg install bash 
+pkg install git 
 pkg install python2
 pkg install php 
 pkg install ruby 
