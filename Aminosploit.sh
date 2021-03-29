@@ -19,7 +19,7 @@ printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m delete blog\e[0m"  ;
 printf "\e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;93m apk amino tool and Virus\e[0m"  ; printf "      \e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;93m wish SEA\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m07\e[0m\e[1;92m]\e[0m\e[1;93m fishing sid\e[0m"  ; printf "                   \e[1;92m[\e[0m\e[1;77m08\e[0m\e[1;92m]\e[0m\e[1;93m payload.py\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m09\e[0m\e[1;92m]\e[0m\e[1;93m install kali linux\e[0m" ;printf "            \e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;93m Tool requirements\e[0m" 
-
+printf "\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;93m instagram \e[0m"
 read -p $'\n\e[1;92m[\e[0m\e[1;77mSEA\e[0m\e[1;92m] Enter the number : \e[0m' name 
 if [ "$name" = "1" ] ; then 
      python Chat.py 
